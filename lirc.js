@@ -15,14 +15,14 @@ console.log(lirc_node.remotes);
 */
 
 // Tell the TV to turn on
-lirc_node.irsend.send_once("tv", "power", function() {
-  console.log("Sent TV power command!");
+lirc_node.irsend.send_once("fanremote", "KEY_POWER", function() {
+  console.log("Sent Fan power command!");
 });
 
-// Tell the Xbox360 to turn on
-lirc_node.irsend.send_once("xbox360", "power", function() {
-  console.log("Sent Xbox360 power command!");
-});
+// // Tell the Xbox360 to turn on
+// lirc_node.irsend.send_once("xbox360", "power", function() {
+//   console.log("Sent Xbox360 power command!");
+// });
 
 
 // Listening for commands
