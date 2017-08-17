@@ -1,0 +1,17 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compromise": "^10.7.1",
+    "hs100-api": "^0.4.0",
+    "nlp_compromise": "^6.5.3",
+    "string-tokenizer": "^0.0.8"
+  }
+}

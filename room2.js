@@ -3,8 +3,10 @@
 //var FAN_TEMPERATURE = 83;  //78.5
 //var HEATER_TEMPERATURE = 83; //76
 
-var FAN_TEMPERATURE = 78.5;
-var HEATER_TEMPERATURE = 76;
+var FAN_ON_TEMPERATURE = 78.5;
+var FAN_OFF_TEMPERATURE = 77.5;
+var HEATER_ON_TEMPERATURE = 75.5;
+var HEATER_OFF_TEMPERATURE = 76.5;
 
 // Init Helper package
 var fs = require('fs');
@@ -49,12 +51,25 @@ var readTemperature = function(){
 
 function isRoomTooHotOrTooCold(temperature)
 {
-	if(temperature > FAN_TEMPERATURE)
+	if(temperature > FAN_ON_TEMPERATURE)
 	{
 		togglePlug(fanPlug,true);
 		togglePlug(heaterPlug,false);
 	}
-	else  if(temperature < HEATER_TEMPERATURE)
+	else if(temperature > FAN_OFF_TEMPERATURE && temperature <= FAN_ON_TEMPERATURE)
+	{
+		togglePlug(heaterPlug,false);
+	}
+	else if(temperature > HEATER_OFF_TEMPERATURE && temperature <= FAN_OFF_TEMPERATURE)
+	{
+		togglePlug(fanPlug,false);
+		togglePlug(heaterPlug,false);
+	}
+	else if(temperature > HEATER_ON_TEMPERATURE && temperature <= HEATER_OFF_TEMPERATURE)
+	{
+		togglePlug(fanPlug,false);
+	}
+	else  if(temperature <= HEATER_ON_TEMPERATURE)
 	{
 		togglePlug(fanPlug,false);
 		togglePlug(heaterPlug,true);
