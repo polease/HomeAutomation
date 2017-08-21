@@ -1,4 +1,4 @@
-# My First Home Automation Project
+# Raspberry Pi control Room Temprature with Heater and Fan
 Are you excited about DIY automating your home? At least I did. We will see how we combine a bunch of different sensor, smart devices to work together including Raspberry Pi, Smart Plug, Temperature Sensor, IR Receiver and IR LED.
 
 ![HomeAutomation](https://github.com/polease/HomeAutomation/blob/master/HomeAutomation.jpeg)
