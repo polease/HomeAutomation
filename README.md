@@ -1,6 +1,8 @@
 # My First Home Automation Project
 Are you excited about DIY automating your home? At least I did. We will see how we combine a bunch of different sensor, smart devices to work together including Raspberry Pi, Smart Plug, Temperature Sensor, IR Receiver and IR LED.
+
 ![HomeAutomation](https://github.com/polease/HomeAutomation/blob/master/HomeAutomation.jpeg)
+
 
 My Daughter is 16 month old, we live in California with nice weather, we don't like air condition too much. One of the challenge we have is how to maintain a comfort temperature for her room. One day I thought, why don't I do a little experiment to do home automation via my little Raspberry PI to turn on and off the fan and heater.
 
@@ -227,4 +229,6 @@ Now, I have every technical piece done, i just need to write my simple program o
 
 In this project, it took me around 3 full days(50% time reading articles, 30% time wiring and coding, 20% time spent on writing this article here). Please star me on [github](https://github.com/polease/HomeAutomation) if you like it.
 
-You can find all the integrated code in [room2.js](https://github.com/polease/HomeAutomation/blob/master/room2.js) file.
+You can find all the integrated code in [room2.js](https://github.com/polease/HomeAutomation/blob/master/room2.js) file.And here is the final looks ( i might need to buy some cases and clean up the wiring mess, :))
+
+![Room2](https://github.com/polease/HomeAutomation/blob/master/Room2.jpeg)
